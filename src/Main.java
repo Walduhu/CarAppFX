@@ -168,7 +168,7 @@ public class Main extends Application {
                 if (node instanceof HBox) {
                     for (Node subNode : ((HBox) node).getChildren()) {
                         if (subNode instanceof Label) {
-                            ((Label) subNode).setStyle("-fx-text-fill: white;");
+                            subNode.setStyle("-fx-text-fill: white;");
                         }
                     }
                 }
@@ -189,7 +189,7 @@ public class Main extends Application {
                 if (node instanceof HBox) {
                     for (Node subNode : ((HBox) node).getChildren()) {
                         if (subNode instanceof Label) {
-                            ((Label) subNode).setStyle("-fx-text-fill: black;");
+                            subNode.setStyle("-fx-text-fill: black;");
                         }
                     }
                 }
