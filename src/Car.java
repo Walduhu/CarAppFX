@@ -1,15 +1,15 @@
 /**
  * Klasse zum Erzeugen von Car-Objekten
  * @author Benjamin Schwarz
- * @version 17.05.24
+ * @version 19.06.24
  */
 
 public class Car extends Main {
 
-    private int id;
-    private String brand;
-    private String model;
-    private int horsepower;
+    private final int id;
+    private final String brand;
+    private final String model;
+    private final int horsepower;
 
     public Car(int carID, String brand, String model, int horsepower) {
         this.id = carID;
@@ -22,32 +22,16 @@ public class Car extends Main {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getBrand() {
         return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public int getHorsepower() {
         return horsepower;
-    }
-
-    public void setHorsepower(int horsepower) {
-        this.horsepower = horsepower;
     }
 
     // jedes Car-Object gibt seine Werte als String zurück
